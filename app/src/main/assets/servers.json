@@ -1,0 +1,45 @@
+[
+  {
+    "name": "Conexiune Internet (Google DNS)",
+    "address": "8.8.8.8",
+    "utils": "ping",
+    "freq": 10,
+    "timeout_s": 5
+  },
+  {
+    "name": "Masina virtuala",
+    "address": "192.168.64.2",
+    "utils": "ping",
+    "freq": 20,
+    "timeout_s": 5
+  },
+  {
+    "name": "Site-ul Companiei",
+    "address": "https://docs.github.com/en/get-started/using-git/about-git",
+    "utils": "http_request",
+    "freq": 10,
+    "timeout_s": 5
+  },
+  {
+    "name": "Gemini",
+    "address": "https://gemini.google.com/appp",
+    "utils": "http_request",
+    "freq": 10,
+    "timeout_s": 5
+  },
+  {
+    "name": "Google Nesecurizat",
+    "address": "www.google.com:80",
+    "utils": "telnet",
+    "freq": 10,
+    "timeout_s": 3
+  },
+  {
+    "name": "HttpConnection",
+    "address": "https://docs.oracle.com/javase/8/docs/api/java/net/HttpURLConnection.html",
+    "utils": "curl",
+    "freq": 10,
+    "cod_http_asteptat": 200,
+    "timeout_s": 5
+  }
+]
